@@ -43,7 +43,7 @@ for ((count=1; count<=MAX_CHECKS; count++)); do
     # Check if all pools are idle
     if [ "$(check_all_pools_idle)" = "true" ]; then
         log_message "SUCCESS: All pools are idle. Proceeding with shutdown."
-        shutdown -p now
+        shutdown -h now
         exit 0 # Script ends here on successful shutdown
     else
         log_message "INFO: Check $count/$MAX_CHECKS - Activity detected. Retrying in ${CHECK_INTERVAL}s."
