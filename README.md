@@ -1,1 +1,2 @@
-Etc sh tools for truenas.
+.sh script tools for use intruenas.
+- focus on light weight script
